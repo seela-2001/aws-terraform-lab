@@ -9,3 +9,15 @@ variable "project" {
   type        = string
   default     = "terraform-lab"
 }
+
+variable "vpc_tag" {
+  description = "The tag to identify the VPC"
+  type        = string
+  default     = "main-vpc"
+}
+
+variable "instance_type" {
+  description = "The type of EC2 instance to launch"
+  type        = string
+  default     = "t3.micro"
+}
